@@ -1,0 +1,23 @@
+As Harry the husband
+I want to see a list of items I need to do
+So that I can plan my day
+
+GIVEN the application is running and there are no ToDo items
+WHEN a GET request is made to the home route
+THEN the response should return an OK result
+
+GIVEN the application is running and there are no ToDo Items
+WHEN a GET request is made to the home route
+THEN an empty array should be returned
+
+GIVEN the application is running and there is one ToDo item
+WHEN a GET request is made to the home route
+THEN the results should contain the list of records returned by the database
+
+GIVEN the application is running and there are multiple items
+WHEN a GET request is made to the home route
+THEN the results should contain the list of records returned by the database
+
+GIVEN the application is running and there are 11 items
+WHEN a GET request is made to the home route
+THEN the results should contain a list of only 10 items returned by the database
